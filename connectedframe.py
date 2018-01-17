@@ -33,7 +33,7 @@ def resize_images():
 
 	for file in images:
 		img = Image.open(file)
-		img = img.resize((640, 480), Image.ANTIALIAS)
+		img = img.resize((1920, 1080), Image.ANTIALIAS)
 		img.save(file, "JPEG")
 
 def list_images():
