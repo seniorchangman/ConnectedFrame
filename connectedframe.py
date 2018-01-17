@@ -6,7 +6,7 @@ from PIL import Image, ImageTk
 from glob import glob
 
 dropbox_link = getenv("DROPBOX_LINK")
-download_interval = int(getenv("DOWNLOAD_INTERVAL_MIN")) * 60 * 1000
+download_interval = int(getenv("DOWNLOAD_INTERVAL_HOURS")) * 60 * 1000
 carousel_interval = int(getenv("CAROUSEL_INTERVAL_SECONDS")) * 1000
 frame_owner = getenv("FRAME_OWNER")
 ifttt_key = getenv("IFTTT_KEY")
